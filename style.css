@@ -322,24 +322,36 @@ section {
         align-items: flex-start;
     }
 
+    .header section {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
     .navbar {
-        flex-direction: column;
+        display: flex;
+        gap: 1rem;
         align-items: flex-start;
         margin-top: 1rem;
+        padding-left: 1rem;
     }
 
     .navbar a {
         margin: 0.5rem 0;
-        font-size: 1.6rem; /* Reduzir um pouco o tamanho da fonte */
+        font-size: 1.6rem;
+        
     }
 
     .icons {
         justify-content: flex-start;
         margin-top: 1rem;
+        display: none;
     }
 
     .home-container section {
         min-height: 60vh;
+        margin-top: 20rem;
     }
 
     .content h3 {
@@ -375,7 +387,8 @@ section {
 /* Para telas muito pequenas (max-width: 480px) */
 @media (max-width: 480px) {
     .header section {
-        padding: 0.5rem;
+        padding: 1rem;
+        margin-top: 25rem;
     }
 
     .icons img {
