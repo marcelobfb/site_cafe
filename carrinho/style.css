@@ -183,3 +183,112 @@ section {
     align-items: center;
     padding: 2rem;
 }
+@media (max-width: 768px) {
+    .header section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header section {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+        margin-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navbar a {
+        margin: 0.5rem 0;
+        font-size: 1.6rem;
+        
+    }
+
+    .icons {
+        justify-content: flex-start;
+        margin-top: 1rem;
+        display: none;
+    }
+
+    .home-container section {
+        min-height: 60vh;
+        margin-top: 20rem;
+    }
+
+    .content h3 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.4rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .about .row {
+        flex-direction: column;
+        padding: 1rem; 
+    }
+
+    .box-container {
+        grid-template-columns: 1fr; 
+        padding: 0.5rem; 
+    }
+
+    #shop {
+        width: 90%;
+        height: auto;
+        right: 5%;
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .header section {
+        padding: 1rem;
+        margin-top: 25rem;
+    }
+
+    .icons img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.7rem 2rem;
+    }
+
+    .menu .box-container .box {
+        padding: 1.5rem;
+    }
+
+    .review .box-container .box {
+        padding: 1.5rem;
+    }
+
+    .home-container section {
+        padding: 1rem;
+    }
+
+    .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    #shop {
+        width: 80%;
+        padding: 1rem;
+    }
+}

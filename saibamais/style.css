@@ -322,28 +322,40 @@ section {
         align-items: flex-start;
     }
 
+    .header section {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
     .navbar {
-        flex-direction: column;
+        display: flex;
+        gap: 1rem;
         align-items: flex-start;
         margin-top: 1rem;
+        padding-left: 1rem;
     }
 
     .navbar a {
         margin: 0.5rem 0;
-        font-size: 1.6rem; /* Reduzir um pouco o tamanho da fonte */
+        font-size: 1.6rem;
+        
     }
 
     .icons {
         justify-content: flex-start;
         margin-top: 1rem;
+        display: none;
     }
 
     .home-container section {
         min-height: 60vh;
+        margin-top: 20rem;
     }
 
     .content h3 {
-        font-size: 3rem; /* Reduzir o tamanho da fonte */
+        font-size: 3rem;
     }
 
     .content p {
@@ -356,26 +368,26 @@ section {
 
     .about .row {
         flex-direction: column;
-        padding: 1rem; /* Adiciona espaçamento interno para melhorar a responsividade */
+        padding: 1rem; 
     }
 
     .box-container {
-        grid-template-columns: 1fr; /* Ajusta para apenas uma coluna */
-        padding: 0.5rem; /* Adiciona espaçamento para elementos */
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
     }
 
     #shop {
         width: 90%;
         height: auto;
         right: 5%;
-        display: none; /* Oculta o carrinho em telas pequenas */
+        display: none; 
     }
 }
 
-/* Para telas muito pequenas (max-width: 480px) */
 @media (max-width: 480px) {
     .header section {
-        padding: 0.5rem;
+        padding: 1rem;
+        margin-top: 25rem;
     }
 
     .icons img {
